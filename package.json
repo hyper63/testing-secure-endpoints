@@ -14,5 +14,8 @@
     "node-fetch": "^2.6.1",
     "tape": "^5.2.2",
     "sinon": "^11.0.0"
+  },
+  "scripts": {
+    "test": "tape test/*_test.js"
   }
 }

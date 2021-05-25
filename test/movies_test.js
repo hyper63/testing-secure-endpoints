@@ -2,8 +2,8 @@ const test = require('tape')
 const testServer = require('@twilson63/test-server')
 const fetch = require('node-fetch')
 const sinon = require('sinon')
-
 const auth = require('../middleware/auth')
+
 sinon.stub(auth, 'check').callsFake(function (req, res, next) {
   req.user = 'bob'
   next()
